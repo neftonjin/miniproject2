@@ -1,21 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@500;700;800;900&family=Montserrat&family=Oswald:wght@400;700&family=Outfit:wght@300;400;600&family=Playfair+Display:wght@900&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Outfit', sans-serif; */
+    /* font-family: 'Playfair Display', serif; */
+    
 }
 
 :root{
-    --pink:rgba(232,102,236,0.6);
+    /* --pink: */
+    --light-pink:rgb(186,64,196);
     }
 
 body{
-    background-color: #202124 ;
+    background-color: #2e2f34; ;
 }
 
 #wrapper{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    border: solid firebrick 2px;
+    /* border: solid firebrick 2px; */
 }
 #section1{
  margin: 0 auto;
@@ -28,44 +34,70 @@ body{
 
 
 .item{
-    max-width: 300px;
+    width: 300px;
     border: dashed white 2px;
     gap: 10px;
     padding: 0.5rem;
     margin: 0.5rem;
-    
-    
+    /* height: 100%; */
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+   
 
 }
 
+.item:hover, .item:hover .item_title{
+    box-shadow: inset 0px 0px 8px rgba(232,102,236, 1) , 0 0 15px rgba(232,102,236, 1);
+}
 .item_title{
-    
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 800;
     top: -20px;;
-     position: relative; 
-    color:var(--pink);
+    position: relative; 
+    color: var(--light-pink);
     border: solid 2px white;
     border-radius: 5px;
     padding-left:7px;
-    background-color: #202124;
+    background-color: #2e2f34;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
    
 
 }
 .item p{  
-    padding: 0.5rem 0;
-    color:var(--pink);
+    font-family: 'Catamaran', sans-serif;
+    padding-bottom: 0.5rem;
+    margin-top: -8px;
+    color:var(--light-pink);
+    font-weight: 400;
+    font-size: 0.8rem;
 }
+
+/*   Add uniform background      */
 pre{
-    
+    font-weight: 100;
+    font-size: 12px;
     color: white;
-    background-color: var(--pink);
     border-radius: 5px;
+    background-image:  linear-gradient(rgba(232,102,236,0.3) 0% , rgba(232,102,236,0.6) 100%);
 }
 header{
+    font-family: 'Catamaran', sans-serif;
     padding: 3rem;
-    color: var(--pink);
+    color: var(--light-pink);
     text-align: center;
+    font-weight: 900;
 }
 header p{
     color: white;
+    padding-top: 1rem;
+    font-weight: 400;
+    font-size: 0.8rem;
 }
 
+footer{
+    text-align: center;
+    color: var(--light-pink);
+    font-size: 2rem;
+    padding: 2rem;
+}
